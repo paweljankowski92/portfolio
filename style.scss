@@ -1,0 +1,39 @@
+
+
+
+
+/*nav*/
+
+i {
+    margin-right: 3px;
+}
+
+/*Carousel*/
+
+.carousel-inner, .carousel-item {
+    height: 100vh;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    padding: 0 auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    right: auto;
+    bottom: auto;
+}
+
+
+/*Products*/
+
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
