@@ -18,6 +18,10 @@ i {
   right: auto;
   bottom: auto; }
 
+  .pizza {
+    filter: brightness(70%);
+  }
+
 /*Products*/
 .card img {
   width: 100%;
