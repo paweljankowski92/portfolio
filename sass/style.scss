@@ -116,7 +116,7 @@ ul li a:hover {
 /*button*/
 
 .btn {
-  width: 10vw;
+  width: 12vw;
   padding: 8px;
   border-radius: 5px;
   text-align: center;
@@ -250,3 +250,11 @@ footer {
 }
 
 /*Media*/
+@media (max-width: 767px) {
+  .golden {
+    display: none;
+  }
+  .row {
+    flex-direction: column;
+  }
+}
