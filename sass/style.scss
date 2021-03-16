@@ -1,0 +1,252 @@
+/*Global*/
+$color-one: #bdc3c7;
+$color-two: #FFC312;
+$font-text: 'Noto Serif', sans-serif;
+$font-header:'Oxygen', sans-serif;
+$font-three: 'Yellowtail', cursive;
+$transition: all 1s;
+
+*, *::before, *::after {
+box-sizing: border-box;
+text-align: center;
+line-height: 1.7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 50px 0;
+}
+
+/*navigation*/
+
+.shownav {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.shownav:hover i {
+  display: block;
+  transition: $transition;
+}
+
+.navigation ul {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  align-content: center;
+}
+
+ul li {
+  padding: 10px;
+  font-size: 20px;
+  display: inline-block;
+  list-style-type: none;
+}
+
+ul li a {
+  color: white;
+}
+
+ul li a:hover {
+  color: $color-two;
+  transition: $transition;
+  text-decoration: none;
+
+}
+
+
+ .golden {
+  font-family: $font-three;
+  color: $color-two;
+  font-size: 40px;
+}
+
+
+/*Splash*/
+
+.splash {
+    height: 100vh;
+    position: relative;
+    background-image: url(https://i.postimg.cc/Fz0mzSyQ/light.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.splash-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.page-title-one {
+    color: black;
+    font-size: 60px;
+    margin: 48px 0 0 0;
+    position: relative;
+}
+
+.page-title-one::after {
+    position: absolute;
+    content: '';
+    bottom: -24px;
+    left: 50%;
+    width: 100px;
+    height: 10px;
+    transform: translateX(-50%);
+    background-color: gold;
+}
+
+.page-subtitle {
+    color: white;
+    margin-top: 48px;
+}
+
+/*button*/
+
+.btn {
+  width: 10vw;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid black;
+  font-weight: bold;
+  background: linear-gradient(90deg, $color-two 50%, transparent 50%);
+  background-position: 100% 0;
+  background-size: 300%;
+  transition: $transition;
+}
+
+  .btn:hover {
+    background-position: 0 100%;
+}
+
+.btn-two {
+  border: 1px solid white;
+  color: white;
+}
+
+
+/*About me*/
+
+.intro p {
+    margin: 0 auto;
+    width: 70%;
+    padding: 48px 0;
+    font-size: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.code {
+  font-style: italic;
+}
+
+/*Carousel*/
+
+.carousel-inner, .carousel-item {
+    height: 100vh;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    padding: 0 auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    right: auto;
+    bottom: auto;
+}
+
+.pizza {
+  filter: brightness(60%);
+}
+
+
+.skills {
+  color: black;
+}
+/*skills*/
+
+.row {
+display: flex;
+justify-content: space-between;
+background-color: white;
+}
+
+.box {
+  text-align: center;
+  align-items: center;
+  flex: 1;
+  border: 1px solid black;
+  margin-top: 40px;
+  opacity: 1;
+  position: relative;
+}
+
+.box:hover img {
+  opacity: 0.1;
+  transition: $transition;
+}
+
+.box:hover .show {
+  display: block;
+  transition: $transition;
+}
+
+.box img {
+  height: 100%;
+  background-size: cover;
+}
+
+.show {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: none;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.row img {
+  width: 100%;
+}
+/*Contact*/
+
+.box-2 {
+  padding: 20px;
+  border: none;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.info {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/*Footer*/
+
+footer {
+  background-color: $color-one;
+  margin: 0;
+}
+
+/*Media*/
